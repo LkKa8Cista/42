@@ -1,0 +1,41 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/30 14:56:12 by lcorreia          #+#    #+#             */
+/*   Updated: 2024/04/30 16:11:39 by lcorreia         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void	*ft_memmove(void *dest, const void *src, size_t n)
+{
+	const unsigned char	*new_src;
+	unsigned char		*new_dest;
+	size_t				iterator;
+
+	new_src = (const unsigned char *)src;
+	new_dest = (unsigned char *)dest;
+	iterator = n;
+	if (!src && !dest)
+		return (0);
+	if (new_dest > new_src)
+	{
+		while (iterator-- > 0)
+			new_dest[iterator] = new_src[iterator];
+	}
+	else
+	{
+		iterator = 0;
+		while (iterator < n)
+		{
+			new_dest[iterator] = new_src[iterator];
+			iterator++;
+		}
+	}
+	return (dest);
+}
