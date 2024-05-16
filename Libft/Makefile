@@ -6,7 +6,7 @@
 #    By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/30 11:12:54 by lcorreia          #+#    #+#              #
-#    Updated: 2024/05/16 10:57:54 by lcorreia         ###   ########.fr        #
+#    Updated: 2024/05/16 16:25:00 by lcorreia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,8 @@ FILES =	ft_isalpha \
 		ft_putstr_fd \
 		ft_putendl_fd \
 		ft_putnbr_fd \
+		ft_striteri \
+		ft_split \
 		
 
 SRCS_DIR = ./
