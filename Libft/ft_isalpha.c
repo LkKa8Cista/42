@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/**
+ * Checks if the given character is an alphabetic letter.
+ *
+ * @argument c - The character to be checked.
+ * @return 1 if the character is an alphabetic letter (either uppercase or lowercase), 0 otherwise.
+ * Checks if the character is an uppercase letter (A-Z) or a lowercase letter (a-z).
+ * Returns 1 if true, otherwise returns 0.
+ */
+
 int	ft_isalpha(int c)
 {
 	if ((c > 64 && c < 91) || (c > 96 && c < 123))

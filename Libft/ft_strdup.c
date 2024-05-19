@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/**
+ * Duplicates a string.
+ *
+ * @param s - Pointer to the null-terminated string to be duplicated.
+ * @return Pointer to a newly allocated memory block containing a duplicate of the input string,
+ *         or NULL if memory allocation fails.
+ * Duplicates the null-terminated string 's' by allocating memory for a new string,
+ * copying the content of 's' to the new memory block, and returning a pointer to the new string.
+ */
+
 char	*ft_strdup(const char *s)
 {
 	int		ite;

@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/**
+ * Writes a string followed by a newline character to the specified file descriptor.
+ *
+ * @param s - The string to be written.
+ * @param fd - The file descriptor where the string will be written.
+ * Writes the string 's' followed by a newline character to the specified file descriptor 'fd'.
+ */
+
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (!(s) || fd < 0)

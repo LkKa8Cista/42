@@ -12,6 +12,19 @@
 
 #include "libft.h"
 
+/**
+ * Converts a string to an integer.
+ *
+ * @argument nptr - The string to be converted to an integer.
+ * @param ite - Iterator to traverse the string.
+ * @param value - Accumulator for the integer value.
+ * @param flag - Sign flag, 1 for positive, -1 for negative.
+ * @return The integer value of the string.
+ * First skip whitespace characters, 
+ * then check for optional sign character (+ or -, if '-', flag turns -1),
+ * finally convert the numeric part of the string to an integer, and multiply by the flag value
+ */
+
 int	ft_atoi(const char *nptr)
 {
 	int	ite;

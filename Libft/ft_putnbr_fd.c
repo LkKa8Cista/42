@@ -12,12 +12,30 @@
 
 #include "libft.h"
 
+/**
+ * Displays an integer as a sequence of characters to the specified file descriptor.
+ *
+ * @param n - The integer to be displayed.
+ * @param fd - The file descriptor where the integer will be displayed.
+ * Recursively displays each digit of the integer 'n' as a character sequence 
+ * to the specified file descriptor 'fd'.
+ */
+
 void	display_nbr(int n, int fd)
 {
 	if (n >= 10)
 		display_nbr(n / 10, fd);
 	write(fd, &"0123456789"[n % 10], 1);
 }
+
+/**
+ * Writes an integer to the specified file descriptor.
+ *
+ * @param n - The integer to be written.
+ * @param fd - The file descriptor where the integer will be written.
+ * Writes the integer 'n' as a character sequence to the specified file descriptor 'fd'.
+ * Handles special cases such as the minimum integer value (-2147483648).
+ */
 
 void	ft_putnbr_fd(int n, int fd)
 {

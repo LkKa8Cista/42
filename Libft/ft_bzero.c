@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * Sets the first n bytes of the memory area pointed to by str to zero.
+ *
+ * @argument str - Pointer to the memory area to be filled with zeroes.
+ * @param new_str - Pointer to traverse and modify the memory area.
+ * @param iterator - Iterator to count the number of bytes set to zero.
+ * @param n - The number of bytes to be set to zero.
+ * Initializes a pointer to the memory area, then iterates through the first n bytes,
+ * setting each byte to zero.
+ */
+
 void	ft_bzero(void *str, size_t n)
 {
 	unsigned char	*new_str;

@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/**
+ * Checks if the given character is a digit.
+ *
+ * @argument c - The character to be checked.
+ * @return 1 if the character is a digit (0-9), 0 otherwise.
+ * Checks if the character's ASCII value falls within the range of digits (48-57).
+ * Returns 1 if true, otherwise returns 0.
+ */
+
 int	ft_isdigit(int c)
 {
 	if (c > 47 && c < 58)

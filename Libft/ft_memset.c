@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * Fills a block of memory with a specified value.
+ *
+ * @param str - Pointer to the memory block to be filled.
+ * @param c - Value to be set (interpreted as an unsigned char).
+ * @param n - Number of bytes to be set to the value 'c'.
+ * @return Pointer to the memory block after filling.
+ * Fills the first 'n' bytes of the memory block pointed to by 'str' with the value 'c'.
+ * Returns a pointer to the memory block 'str' after filling.
+ */
+
 void	*ft_memset(void *str, int c, size_t n)
 {
 	unsigned char	*new_str;

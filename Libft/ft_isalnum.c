@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/**
+ * Checks if the given character is alphanumeric.
+ *
+ * @argument c - The character to be checked.
+ * @return 1 if the character is alphanumeric (a digit or a letter), 0 otherwise.
+ * Checks if the character is a digit (0-9), an uppercase letter (A-Z),
+ * or a lowercase letter (a-z). Returns 1 if true, otherwise returns 0.
+ */
+
 int	ft_isalnum(int c)
 {
 	if ((c > 47 && c < 58) || (c > 64 && c < 91) || (c > 96 && c < 123))

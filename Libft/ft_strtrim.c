@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/**
+ * Finds the index of the first character in 's1' that does not appear in 'set'.
+ *
+ * @param s1 - Pointer to the null-terminated string to be searched.
+ * @param set - Pointer to the null-terminated set of characters to search for.
+ * @return Index of the first character in 's1' that is not in 'set'.
+ * This function searches the string 's1' for the first character that is not present in the set of characters specified by 'set'.
+ * Returns the index of the first such character, or the length of 's1' if all characters in 's1' are in 'set'.
+ */
+
 int	ft_getstart(const char *s1, const char *set)
 {
 	size_t	len;

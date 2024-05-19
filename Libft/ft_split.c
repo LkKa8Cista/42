@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/**
+ * Counts the number of words in a string separated by a specified delimiter.
+ *
+ * @param s - The string to be analyzed.
+ * @param c - The delimiter character.
+ * @return The number of words in the string.
+ * Iterates through the string 's' and counts the number of words separated by the delimiter 'c'.
+ */
+
 static int	words(char const *s, char c)
 {
 	int	count;
@@ -28,6 +37,15 @@ static int	words(char const *s, char c)
 	}
 	return (count);
 }
+
+/**
+ * Inserts words from a string into an array of strings.
+ *
+ * @param split - Pointer to the array of strings.
+ * @param s - The string to be split.
+ * @param c - The delimiter character.
+ * Inserts words from the string 's' into the array of strings 'split', separated by the delimiter 'c'.
+ */
 
 static void	insert(char **split, char const *s, char c)
 {
@@ -50,6 +68,15 @@ static void	insert(char **split, char const *s, char c)
 	}
 	*split = NULL;
 }
+
+/**
+ * Splits a string into an array of strings using a specified delimiter.
+ *
+ * @param s - The string to be split.
+ * @param c - The delimiter character.
+ * @return An array of strings representing the split words.
+ * Splits the string 's' into an array of strings based on the delimiter 'c'.
+ */
 
 char	**ft_split(char const *s, char c)
 {

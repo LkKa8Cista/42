@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * Creates a new substring from a given string starting at index 'start' with length 'len'.
+ *
+ * @param s - Pointer to the null-terminated string from which the substring is created.
+ * @param start - Index of the first character of the substring in 's'.
+ * @param len - Length of the substring.
+ * @return Pointer to the newly allocated substring, or NULL if allocation fails.
+ * This function creates a new substring from the string 's' starting at index 'start' with length 'len'.
+ * Returns a pointer to the newly allocated substring, or NULL if the allocation fails.
+ */
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*new_str;
