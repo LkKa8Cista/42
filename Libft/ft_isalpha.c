@@ -6,7 +6,7 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 10:42:36 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/04/30 11:51:01 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/05/20 10:26:22 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,11 @@
  * Checks if the given character is an alphabetic letter.
  *
  * @argument c - The character to be checked.
- * @return 1 if the character is an alphabetic letter (either uppercase or lowercase), 0 otherwise.
- * Checks if the character is an uppercase letter (A-Z) or a lowercase letter (a-z).
+ * @return 1 if the character is an alphabetic letter (either uppercase or 
+ * lowercase), 0 otherwise.
+ * 
+ * Checks if the character is an uppercase letter (A-Z) or a lowercase
+ * letter (a-z).
  * Returns 1 if true, otherwise returns 0.
  */
 

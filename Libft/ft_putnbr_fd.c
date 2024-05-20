@@ -6,17 +6,19 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 10:57:15 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/05/16 10:57:24 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/05/20 11:06:25 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * Displays an integer as a sequence of characters to the specified file descriptor.
+ * Displays an integer as a sequence of characters to the specified file 
+ * descriptor.
  *
  * @param n - The integer to be displayed.
  * @param fd - The file descriptor where the integer will be displayed.
+ * 
  * Recursively displays each digit of the integer 'n' as a character sequence 
  * to the specified file descriptor 'fd'.
  */
@@ -33,7 +35,9 @@ void	display_nbr(int n, int fd)
  *
  * @param n - The integer to be written.
  * @param fd - The file descriptor where the integer will be written.
- * Writes the integer 'n' as a character sequence to the specified file descriptor 'fd'.
+ * 
+ * Writes the integer 'n' as a character sequence to the specified file 
+ * descriptor 'fd'.
  * Handles special cases such as the minimum integer value (-2147483648).
  */
 

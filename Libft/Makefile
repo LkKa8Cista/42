@@ -6,7 +6,7 @@
 #    By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/30 11:12:54 by lcorreia          #+#    #+#              #
-#    Updated: 2024/05/16 16:25:00 by lcorreia         ###   ########.fr        #
+#    Updated: 2024/05/20 11:26:57 by lcorreia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ FILES =	ft_isalpha \
 		ft_strlcpy \
 		ft_strlcat \
 		ft_toupper \
-		ft_toupper \
+		ft_tolower \
 		ft_strchr \
 		ft_strrchr \
 		ft_strncmp \
@@ -51,7 +51,8 @@ FILES =	ft_isalpha \
 		ft_putnbr_fd \
 		ft_striteri \
 		ft_split \
-		ft_lstnew \
+		
+FILES_B = ft_lstnew \
 		ft_lstadd_front \
 		ft_lstsize \
 		ft_lstlast \
@@ -59,7 +60,7 @@ FILES =	ft_isalpha \
 		ft_lstdelone \
 		ft_lstclear \
 		ft_lstiter \
-		ft_lstmap \
+		ft_lstmap
 
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
@@ -70,11 +71,14 @@ OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES)))
 OBJS_B = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES_B)))
 
 
-.c.o: $(SRCS)
+.c.o: $(SRCS) $(SRCS_B)
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 $(NAME): $(OBJS)
 	$(AR) $@ $^
+
+bonus: $(NAME) $(OBJS_B)
+	$(AR) $(NAME) $^
 
 all: $(NAME)
 

@@ -6,7 +6,7 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 12:09:33 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/05/09 13:15:01 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/05/20 11:13:00 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,11 @@
  *
  * @param str - Pointer to the null-terminated string to be searched.
  * @param c - The character to search for.
- * @return Pointer to the last occurrence of 'c' within 'str' if found,
- *         or NULL if 'c' is not found in 'str'.
- * Searches for the last occurrence of the character 'c' within the null-terminated string 'str'.
+ * @return Pointer to the last occurrence of 'c' within 'str' if found, 
+ * or NULL if 'c' is not found in 'str'.
+ * 
+ * Searches for the last occurrence of the character 'c' within the 
+ * null-terminated string 'str'.
  * Returns a pointer to the located character if found, otherwise returns NULL.
  */
 

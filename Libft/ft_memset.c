@@ -6,7 +6,7 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 13:43:36 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/04/30 14:18:14 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/05/20 11:06:02 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@
  * @param c - Value to be set (interpreted as an unsigned char).
  * @param n - Number of bytes to be set to the value 'c'.
  * @return Pointer to the memory block after filling.
- * Fills the first 'n' bytes of the memory block pointed to by 'str' with the value 'c'.
+ * 
+ * Fills the first 'n' bytes of the memory block pointed to by 'str' 
+ * with the value 'c'.
  * Returns a pointer to the memory block 'str' after filling.
  */
 

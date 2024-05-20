@@ -6,7 +6,7 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 10:54:44 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/05/16 10:54:55 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/05/20 11:06:32 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
  *
  * @param s - The string to be written.
  * @param fd - The file descriptor where the string will be written.
+ * 
  * Writes the string 's' to the specified file descriptor 'fd'.
  */
 

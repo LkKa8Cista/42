@@ -6,11 +6,12 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 10:59:04 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/05/16 16:26:42 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/05/20 12:19:42 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 /**
  * Counts the number of words in a string separated by a specified delimiter.
@@ -18,7 +19,9 @@
  * @param s - The string to be analyzed.
  * @param c - The delimiter character.
  * @return The number of words in the string.
- * Iterates through the string 's' and counts the number of words separated by the delimiter 'c'.
+ * 
+ * Iterates through the string 's' and counts the number of words separated 
+ * by the delimiter 'c'.
  */
 
 static int	words(char const *s, char c)
@@ -44,7 +47,9 @@ static int	words(char const *s, char c)
  * @param split - Pointer to the array of strings.
  * @param s - The string to be split.
  * @param c - The delimiter character.
- * Inserts words from the string 's' into the array of strings 'split', separated by the delimiter 'c'.
+ * 
+ * Inserts words from the string 's' into the array of strings 'split', 
+ * separated by the delimiter 'c'.
  */
 
 static void	insert(char **split, char const *s, char c)
@@ -83,10 +88,12 @@ char	**ft_split(char const *s, char c)
 	char	**split;
 	int		size;
 
-	size = words(s, c);
 	if (!s)
+	{
 		return (NULL);
-	split = (char **)malloc(sizeof(char *) * (size + 1));
+	}
+	size = words(s, c);
+	split = malloc(sizeof(char *) * (size + 1));
 	if (!split)
 		return (NULL);
 	insert(split, s, c);

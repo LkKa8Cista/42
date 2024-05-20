@@ -6,7 +6,7 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 14:03:29 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/05/16 16:28:08 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/05/20 10:27:18 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,11 @@
  * @param value - Accumulator for the integer value.
  * @param flag - Sign flag, 1 for positive, -1 for negative.
  * @return The integer value of the string.
+ * 
  * First skip whitespace characters, 
  * then check for optional sign character (+ or -, if '-', flag turns -1),
- * finally convert the numeric part of the string to an integer, and multiply by the flag value
+ * finally convert the numeric part of the string to an integer, 
+ * and multiply by the flag value
  */
 
 int	ft_atoi(const char *nptr)

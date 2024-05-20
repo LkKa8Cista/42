@@ -6,7 +6,7 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 10:51:08 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/05/16 13:18:27 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/05/20 11:11:41 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,9 @@
  *
  * @param s - Pointer to the null-terminated string to be mapped.
  * @param f - Pointer to the function to be applied to each character.
- * @return Pointer to a newly allocated memory block containing the mapped string,
- *         or NULL if memory allocation fails or either input pointer is NULL.
+ * @return Pointer to a newly allocated memory block containing the mapped 
+ * string,or NULL if memory allocation fails or either input pointer is NULL.
+ * 
  * Applies the function 'f' to each character of the null-terminated string 's',
  * creating a new string with the results. Returns a pointer to the new string.
  */
