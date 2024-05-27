@@ -13,16 +13,11 @@
 #include "libft.h"
 
 /**
- * Finds the index of the first character in 's1' that does not appear in 'set'.
+ * Determines the starting position in the string s1 that does not contain any characters from set.
  *
- * @param s1 - Pointer to the null-terminated string to be searched.
- * @param set - Pointer to the null-terminated set of characters to search for.
- * @return Index of the first character in 's1' that is not in 'set'.
- * 
- * This function searches the string 's1' for the first character that is not 
- * present in the set of characters specified by 'set'.
- * Returns the index of the first such character, or the length of 's1' 
- * if all characters in 's1' are in 'set'.
+ * @param s1 - The input string to be trimmed.
+ * @param set - The set of characters to be trimmed from the beginning of s1.
+ * @return The index of the first character in s1 that is not in set.
  */
 
 int	ft_getstart(const char *s1, const char *set)
@@ -43,6 +38,14 @@ int	ft_getstart(const char *s1, const char *set)
 	return (ite);
 }
 
+/**
+ * Determines the ending position in the string s1 that does not contain any characters from set.
+ *
+ * @param s1 - The input string to be trimmed.
+ * @param set - The set of characters to be trimmed from the end of s1.
+ * @return The index of the last character in s1 that is not in set.
+ */
+
 int	ft_getend(const char *s1, const char *set)
 {
 	size_t	len;
@@ -60,6 +63,14 @@ int	ft_getend(const char *s1, const char *set)
 	}
 	return (len - ite);
 }
+
+/**
+ * Trims the characters from the beginning and the end of the string s1 that are present in the set.
+ *
+ * @param s1 - The input string to be trimmed.
+ * @param set - The set of characters to be trimmed from the beginning and end of s1.
+ * @return A new string with the characters from set removed from both ends.
+ */
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
