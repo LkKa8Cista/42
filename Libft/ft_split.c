@@ -6,12 +6,11 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 10:59:04 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/05/20 12:19:42 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/05/28 14:02:43 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 /**
  * Counts the number of words in a string separated by a specified delimiter.

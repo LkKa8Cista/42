@@ -6,7 +6,7 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 15:21:44 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/05/23 17:08:39 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/05/28 12:14:06 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_printstr(char *str)
 	if (str == NULL)
 	{
 		write(1, "(null)", 6);
-		ite = 6;
+		return (6);
 	}
 	while (str[ite])
 	{

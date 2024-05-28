@@ -6,7 +6,7 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 15:21:48 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/05/23 17:09:34 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/05/28 14:44:20 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,11 @@ int	ft_print_nbr(int num)
 	int	len;
 
 	len = 0;
+	if (num == -2147483648)
+	{
+		write(1, "-2147483648", 11);
+		return (11);
+	}
 	if (num < 0)
 	{
 		ft_printchar('-');
@@ -25,33 +30,31 @@ int	ft_print_nbr(int num)
 	}
 	if (num > 9)
 	{
-		ft_print_nbr(num / 10);
-		ft_print_nbr(num % 10);
+		len += ft_print_nbr(num / 10);
+		len += ft_print_nbr(num % 10);
 	}
 	else
 	{
 		ft_printchar(num + '0');
 		len++;
 	}
-	
 	return (len);
 }
 
-int ft_print_un_nbr(unsigned int num)
+int	ft_print_un_nbr(unsigned int num)
 {
 	int	len;
 
 	len = 0;
 	if (num > 9)
 	{
-		ft_print_un_nbr(num / 10);
-		ft_print_un_nbr(num % 10);
+		len += ft_print_un_nbr(num / 10);
+		len += ft_print_un_nbr(num % 10);
 	}
 	else
 	{
 		ft_printchar(num + '0');
 		len++;
 	}
-	
 	return (len);
 }

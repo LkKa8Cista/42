@@ -6,7 +6,7 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 10:07:41 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/05/23 17:04:22 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/05/28 14:43:27 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	ft_format(va_list args, const char type)
 		print_length += ft_count_hex_len(va_arg(args, unsigned int), 32);
 	else if (type == '%')
 		print_length += ft_printpercent();
-	return print_length;
+	return (print_length);
 }
 
 int	ft_printf(const char *str, ...)

@@ -6,14 +6,15 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 10:32:48 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/05/20 11:13:15 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/05/28 13:41:42 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * Determines the starting position in the string s1 that does not contain any characters from set.
+ * Determines the starting position in the string s1 that does not contain
+ * any characters from set.
  *
  * @param s1 - The input string to be trimmed.
  * @param set - The set of characters to be trimmed from the beginning of s1.
@@ -39,7 +40,8 @@ int	ft_getstart(const char *s1, const char *set)
 }
 
 /**
- * Determines the ending position in the string s1 that does not contain any characters from set.
+ * Determines the ending position in the string s1 that does not contain 
+ * any characters from set.
  *
  * @param s1 - The input string to be trimmed.
  * @param set - The set of characters to be trimmed from the end of s1.
@@ -65,10 +67,12 @@ int	ft_getend(const char *s1, const char *set)
 }
 
 /**
- * Trims the characters from the beginning and the end of the string s1 that are present in the set.
+ * Trims the characters from the beginning and the end of the string s1
+ *  that are present in the set.
  *
  * @param s1 - The input string to be trimmed.
- * @param set - The set of characters to be trimmed from the beginning and end of s1.
+ * @param set - The set of characters to be trimmed from the beginning and
+ * end of s1.
  * @return A new string with the characters from set removed from both ends.
  */
 

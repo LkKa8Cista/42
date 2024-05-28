@@ -6,43 +6,35 @@
 #    By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/30 11:12:54 by lcorreia          #+#    #+#              #
-#    Updated: 2024/05/23 17:08:08 by lcorreia         ###   ########.fr        #
+#    Updated: 2024/05/28 11:34:45 by lcorreia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libftprintf.a
+SRCS	= ft_printf.c \
+		ft_print_car.c \
+		ft_print_hex.c \
+		ft_print_num.c
 
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror
-AR = ar rcs
-RM = rm -f
+OBJS	= $(SRCS:.c=.o)
 
-FILES =	ft_printf \
-		ft_print_car \
-		ft_print_hex \
-		ft_print_num
+CC	= cc
+CFLAGS	= -Wall -Wextra -Werror
+AR	= ar rcs
+RM	= rm -f
 
-SRCS_DIR = ./
-SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
+NAME	= libftprintf.a
 
-OBJS_DIR = ./
-OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES)))
-
-
-.c.o: $(SRCS)
-	$(CC) $(CFLAGS) -c -o $@ $<
+all:	 $(NAME)
 
 $(NAME): $(OBJS)
-	$(AR) $@ $^
-
-all: $(NAME)
+	  $(AR) $(NAME) $(OBJS)
 
 clean:
-	$(RM) $(OBJS)
+	  $(RM) $(OBJS)
 
-fclean: clean
-	$(RM) $(NAME)
+fclean:  clean
+	  $(RM) $(NAME)
 
-re: clean all
+re:	 fclean $(NAME)
 
-.PHONY: bonus all clean fclean re
+.PHONY: all clean fclean re
