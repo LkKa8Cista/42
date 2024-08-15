@@ -12,6 +12,12 @@
 
 #include "ft_printf.h"
 
+/**
+ * Prints an integer number to the standard output.
+ *
+ * @param num - The integer to be printed.
+ * @return The number of characters printed.
+ */
 int	ft_print_nbr(int num)
 {
 	int	len;
@@ -41,6 +47,12 @@ int	ft_print_nbr(int num)
 	return (len);
 }
 
+/**
+ * Prints an unsigned integer number to the standard output.
+ *
+ * @param num - The unsigned integer to be printed.
+ * @return The number of characters printed.
+ */
 int	ft_print_un_nbr(unsigned int num)
 {
 	int	len;

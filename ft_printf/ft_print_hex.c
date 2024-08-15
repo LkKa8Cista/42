@@ -12,6 +12,12 @@
 
 #include "ft_printf.h"
 
+/**
+ * Prints an unsigned integer in hexadecimal format.
+ *
+ * @param num - The unsigned integer to be printed.
+ * @param caps - If non-zero, the hexadecimal letters will be uppercase; otherwise, they will be lowercase.
+ */
 void	ft_print_hex(unsigned int num, int caps)
 {
 	if (num == 0)
@@ -38,6 +44,11 @@ void	ft_print_hex(unsigned int num, int caps)
 	return ;
 }
 
+/**
+ * Prints a pointer address in hexadecimal format.
+ *
+ * @param num_big - The pointer value to be printed as an unsigned long long integer.
+ */
 void	ft_print_pointer(unsigned long long int num_big)
 {
 	if (num_big > 15)
@@ -59,6 +70,13 @@ void	ft_print_pointer(unsigned long long int num_big)
 	return ;
 }
 
+/**
+ * Counts the length of an unsigned integer when printed in hexadecimal format, and prints the number.
+ *
+ * @param num - The unsigned integer to be printed and counted.
+ * @param caps - If non-zero, the hexadecimal letters will be uppercase; otherwise, they will be lowercase.
+ * @return The number of characters printed.
+ */
 int	ft_count_hex_len(unsigned int num, int caps)
 {
 	int				len;
@@ -80,6 +98,12 @@ int	ft_count_hex_len(unsigned int num, int caps)
 	return (len);
 }
 
+/**
+ * Counts the length of a pointer when printed in hexadecimal format, and prints the pointer value.
+ *
+ * @param big_num - The pointer to be printed and counted.
+ * @return The number of characters printed, including the "0x" prefix.
+ */
 int	ft_count_point_len(void *big_num)
 {
 	int						len;

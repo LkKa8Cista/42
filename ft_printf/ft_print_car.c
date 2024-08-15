@@ -12,12 +12,24 @@
 
 #include "ft_printf.h"
 
+/**
+ * Prints a single character to the standard output.
+ *
+ * @param c - The character to be printed.
+ * @return The number of characters printed (always 1).
+ */
 int	ft_printchar(int c)
 {
 	write(1, &c, 1);
 	return (1);
 }
 
+/**
+ * Prints a string to the standard output.
+ *
+ * @param str - The string to be printed. If str is NULL, "(null)" is printed instead.
+ * @return The number of characters printed.
+ */
 int	ft_printstr(char *str)
 {
 	int	ite;
@@ -36,6 +48,11 @@ int	ft_printstr(char *str)
 	return (ite);
 }
 
+/**
+ * Prints a percent symbol '%' to the standard output.
+ *
+ * @return The number of characters printed (always 1).
+ */
 int	ft_printpercent(void)
 {
 	write(1, "%", 1);

@@ -12,6 +12,13 @@
 
 #include "ft_printf.h"
 
+/**
+ * Handles various format specifiers for the ft_printf function.
+ *
+ * @param args - The list of arguments to be formatted.
+ * @param type - The format specifier indicating the type of argument.
+ * @return The number of characters printed for the given format specifier.
+ */
 int	ft_format(va_list args, const char type)
 {
 	int	print_length;
@@ -36,6 +43,12 @@ int	ft_format(va_list args, const char type)
 	return (print_length);
 }
 
+/**
+ * A custom implementation of the printf function that handles formatted output.
+ *
+ * @param str - The format string containing text and format specifiers.
+ * @return The total number of characters printed.
+ */
 int	ft_printf(const char *str, ...)
 {
 	int		ite;
