@@ -6,7 +6,7 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 15:26:49 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/05/28 14:47:56 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/08/16 12:08:34 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
  * Prints an unsigned integer in hexadecimal format.
  *
  * @param num - The unsigned integer to be printed.
- * @param caps - If non-zero, the hexadecimal letters will be uppercase; otherwise, they will be lowercase.
+ * @param caps - If non-zero, the hexadecimal letters will be uppercase; 
+ * otherwise, they will be lowercase.
  */
 void	ft_print_hex(unsigned int num, int caps)
 {
@@ -47,7 +48,8 @@ void	ft_print_hex(unsigned int num, int caps)
 /**
  * Prints a pointer address in hexadecimal format.
  *
- * @param num_big - The pointer value to be printed as an unsigned long long integer.
+ * @param num_big - The pointer value to be printed as an unsigned long 
+ * long integer.
  */
 void	ft_print_pointer(unsigned long long int num_big)
 {
@@ -71,10 +73,12 @@ void	ft_print_pointer(unsigned long long int num_big)
 }
 
 /**
- * Counts the length of an unsigned integer when printed in hexadecimal format, and prints the number.
+ * Counts the length of an unsigned integer when printed in hexadecimal 
+ * format, and prints the number.
  *
  * @param num - The unsigned integer to be printed and counted.
- * @param caps - If non-zero, the hexadecimal letters will be uppercase; otherwise, they will be lowercase.
+ * @param caps - If non-zero, the hexadecimal letters will be uppercase; 
+ * otherwise, they will be lowercase.
  * @return The number of characters printed.
  */
 int	ft_count_hex_len(unsigned int num, int caps)
@@ -99,7 +103,8 @@ int	ft_count_hex_len(unsigned int num, int caps)
 }
 
 /**
- * Counts the length of a pointer when printed in hexadecimal format, and prints the pointer value.
+ * Counts the length of a pointer when printed in hexadecimal format, 
+ * and prints the pointer value.
  *
  * @param big_num - The pointer to be printed and counted.
  * @return The number of characters printed, including the "0x" prefix.

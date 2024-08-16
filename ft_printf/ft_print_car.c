@@ -6,7 +6,7 @@
 /*   By: lcorreia <lcorreia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 15:21:44 by lcorreia          #+#    #+#             */
-/*   Updated: 2024/05/28 12:14:06 by lcorreia         ###   ########.fr       */
+/*   Updated: 2024/08/16 12:07:45 by lcorreia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ int	ft_printchar(int c)
 /**
  * Prints a string to the standard output.
  *
- * @param str - The string to be printed. If str is NULL, "(null)" is printed instead.
+ * @param str - The string to be printed. If str is NULL, "(null)" is 
+ * printed instead.
  * @return The number of characters printed.
  */
 int	ft_printstr(char *str)
