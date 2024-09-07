@@ -108,6 +108,8 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return (NULL);
 }
+
+
 /**
  * Sets the first n bytes of the memory area pointed to by str to zero.
  *
@@ -119,7 +121,6 @@ char	*ft_strchr(const char *str, int c)
  * Initializes a pointer to the memory area, then iterates through 
  * the first n bytes, setting each byte to zero.
  */
-
 void	ft_bzero(void *str, size_t n)
 {
 	unsigned char	*new_str;
@@ -149,7 +150,6 @@ void	ft_bzero(void *str, size_t n)
  * 
  * Returns the pointer to the allocated memory.
  */
-
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*mem;
@@ -160,3 +160,4 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(mem, (nmemb * size));
 	return (mem);
 }
+
