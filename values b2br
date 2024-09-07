@@ -1,0 +1,21 @@
+Luis42beroot
+Luis42beuser
+Luis42becrypt
+
+
+login
+Luis42belogin
+
+hostname
+lcorreia@10.12.249.197
+127.0.0.1/8
+10.12.249.197/16 brd 10.12.255.255
+
+
+Defaults  passwd_tries=3
+Defaults  badpass_message="Mensaje de error personalizado"
+Defaults  logfile="/var/log/sudo/sudo_config"
+Defaults  log_input, log_output
+Defaults  iolog_dir="/var/log/sudo"
+Defaults  requiretty
+Defaults  secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
